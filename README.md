@@ -1,4 +1,4 @@
-# bunyan-readable EXPERIMENTAL [![Build Status](https://travis-ci.org/GamingCoder/bunyan-readable.svg?branch=master)](https://travis-ci.org/GamingCoder/bunyan-readable)
+# bunyan-readable [![Build Status](https://travis-ci.org/GamingCoder/bunyan-readable.svg?branch=master)](https://travis-ci.org/GamingCoder/bunyan-readable)
 This project aims to make [bunyan](https://www.npmjs.org/package/bunyan) logs more readable. It is meant to produce output for humans and not machines.
 
 # Format
@@ -20,3 +20,12 @@ This project aims to make [bunyan](https://www.npmjs.org/package/bunyan) logs mo
 name[hostname/pid]: name(level): msg=msg custom_field=whatever
 ```
 Note: name(level) turns level codes like into level names e.g. 30 to info
+
+# Install
+```bash
+$ npm install bunyan-readable -g
+```
+Now you can pipe bunyan output to `bunyan-readable'
+```bash
+$ node yourscript.js | bunyan-readable
+```
