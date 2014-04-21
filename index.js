@@ -5,8 +5,15 @@ function name (level) {
 	return levels[level];
 }
 
-exports = module.exports = function(log) {
-	var cLog = util.format('%s[%s/%d]: %s: msg=%s', log.name, log.hostname, log.pid, name(log.level), log.msg);
+function custom (xlog) {
+	var result = '';
 
-	return cLog;
+	for (key in xlog) if (key != 'v' && key != 'name' && key != 'hostname' && key != 'time' && key != 'pid' && key != 'msg' && key != 'level') result += ' ' + key + '=' + xlog[key];
+
+	return result;
+}
+
+module.exports = function(log) {
+	console.log(custom(log))
+	return util.format('%s[%s/%d]: %s: msg=%s', log.name, log.hostname, log.pid, name(log.level), log.msg).toString() + custom(log);
 };
