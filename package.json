@@ -1,0 +1,24 @@
+{
+  "name": "bunyan-readable",
+  "version": "0.0.0",
+  "description": "Make bunyan logs readable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GamingCoder/bunyan-readable.git"
+  },
+  "keywords": [
+    "bunyan",
+    "logs",
+    "readable"
+  ],
+  "author": "Tobias Meyer (GamingCoder)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GamingCoder/bunyan-readable/issues"
+  },
+  "homepage": "https://github.com/GamingCoder/bunyan-readable"
+}
