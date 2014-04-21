@@ -1,4 +1,4 @@
-# bunyan-readable EXPERIMENTAL
+# bunyan-readable EXPERIMENTAL [![Build Status](https://travis-ci.org/GamingCoder/bunyan-readable.svg?branch=master)](https://travis-ci.org/GamingCoder/bunyan-readable)
 This project aims to make [bunyan](https://www.npmjs.org/package/bunyan) logs more readable. It is meant to produce output for humans and not machines.
 
 # Format
