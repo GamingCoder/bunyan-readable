@@ -11,7 +11,7 @@ This project aims to make [bunyan](https://www.npmjs.org/package/bunyan) logs mo
   "level": "level",
   "msg": "msg",
   "time": "time",
-  "v": "log_version"
+  "v": "log_version",
   "custom_field": "whatever"
 }
 ```
