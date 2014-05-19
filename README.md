@@ -19,7 +19,7 @@ This project aims to make [bunyan](https://www.npmjs.org/package/bunyan) logs mo
 ```
 name[hostname/pid]: name(level): msg=msg custom_field=whatever
 ```
-Note: name(level) turns level codes like into level names e.g. 30 to info
+Note: name(level) turns log level codes into level names e.g. 30 into info
 
 # Install
 ```bash
