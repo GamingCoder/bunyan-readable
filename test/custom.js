@@ -6,7 +6,7 @@ test('Logging standard logs with custom fields', function(t) {
 	t.plan(2);
 
 	var msg = logMsg;
-	msg.custom = true
+	msg.custom = true;
 	t.equal(bunyanReadable(msg), 'myapp[myhost/34572]: info: msg=start custom=true', 'myapp[myhost/34572]: info: msg=start custom=true');
 
 	msg.custom = [1, 2, 'three', 'four'];
