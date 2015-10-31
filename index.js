@@ -8,7 +8,15 @@ function name (level) {
 function custom (xlog) {
 	var result = '';
 
-	for (var key in xlog) if (key != 'v' && key != 'name' && key != 'hostname' && key != 'time' && key != 'pid' && key != 'msg' && key != 'level') result += ' ' + key + '=' + xlog[key];
+	for (var key in xlog) {
+		if (key != 'v' && key != 'name' && key != 'hostname' && key != 'time' && key != 'pid' && key != 'msg' && key != 'level'){
+			if (typeof xlog[key] === 'object'){
+				result += ' ' + key + '=' + JSON.stringify(xlog[key]);
+			} else {
+				result += ' ' + key + '=' + xlog[key];
+			}
+		}
+	}
 
 	return result;
 }
