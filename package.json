@@ -1,6 +1,6 @@
 {
   "name": "bunyan-readable",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Make bunyan logs readable",
   "main": "index.js",
   "scripts": {
