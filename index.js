@@ -14,7 +14,7 @@ function custom (xlog) {
 }
 
 module.exports = function(log) {
-	if (typeof log === 'object') {
+	if (typeof log === 'object' && log.name && log.hostname && log.pid && log.level && log.msg) {
 		return util.format('%s[%s/%d]: %s: msg=%s', log.name, log.hostname, log.pid, name(log.level), log.msg).toString() + custom(log);
 	} else{
 		return log;
